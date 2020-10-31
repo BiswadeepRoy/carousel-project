@@ -1,0 +1,146 @@
+div.carousel {
+    position: relative;
+    max-width: 40vw;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 60vw;
+    height: 60vh;
+}
+
+.modal-video {
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+}
+
+div.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.50);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 100 !important;
+    transition: 0.5s;
+}
+
+span.cross {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.carousel-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.carousel-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.carousel-track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    transition: transform 0.5s ease-in;
+}
+
+li.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+button.left {
+    left: -40px;
+}
+
+button.right {
+    right: -40px;
+}
+
+button.carousel-button:focus {
+    outline: none;
+}
+
+div.carousel-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+button.carousel-indicator {
+    border: 0px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #606060;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+button.carousel-indicator:focus {
+    outline: none;
+}
+
+button.carousel-indicator:hover {
+    outline: none;
+}
+
+button.current-slide {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 20px;
+    transition: 0.5s;
+    background-color: black;
+}
